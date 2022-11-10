@@ -1,0 +1,521 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #999;
+}
+
+.shell {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2 {
+    font-size: 300%;
+    color: #6b6b6b;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    position: sticky;
+    list-style: none;
+    padding: 0px;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+li > a {
+    text-decoration: none;
+    padding: 10px;
+    color: #6b6b6b;
+}
+
+li > a:hover {
+    color: darkblue;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    padding: 0px 50px;
+}
+
+.aboutone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pictures {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.picture1 > img {
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+}
+
+.picture2 > img {
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+}
+
+.picture3 > img {
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+}
+
+.two {
+    padding-bottom: 10px;
+}
+
+.abouttwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    background-color: #282828;
+    justify-content: center;
+    font-size: x-large;
+    
+}
+
+.socials > a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+.socials > a:hover {
+    color: aqua;
+}
+
+.contactinfo {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contactinfo, .copy {
+    color: white;
+    background-color: #282828;
+    border-bottom: solid white 1px;
+}
+
+svg {
+    height: 20px;
+    color: white;
+}
+
+.profiles {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 50px;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.profileimg {
+    height: 150px;
+    width: 150px;
+}
+
+[aria-controls="menu-list"] {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        color: #999;
+    }
+    
+    h1, h2 {
+        font-size: 300%;
+        color: #6b6b6b;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        position: sticky;
+    }
+    
+    .logo {
+        flex-grow: 1;
+    }
+    
+    li > a {
+        text-decoration: none;
+        padding: 10px;
+        color: #6b6b6b;
+    }
+    
+    li > a:hover {
+        color: darkblue;
+    }
+    
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        padding: 0px 50px;
+    }
+    
+    .aboutone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pictures {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    
+    .picture1 > img {
+        height: 150px;
+        width: 200px;
+    }
+
+    .picture1 {
+        display: grid;
+        grid-template-areas: 
+        "one two" 
+        "one three"
+        "one three";
+        grid-template-columns: 220px 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        
+    }
+    
+    .picture2 > img {
+        
+        height: 150px;
+        width: 200px;
+    }
+
+    .picture2 {
+        display: grid;
+        grid-template-areas: 
+        "one two" 
+        "one three"
+        "one three";
+        grid-template-columns: 220px 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    .picture3 > img {
+        height: 150px;
+        width: 200px;
+    }
+
+    .picture3 {
+        display: grid;
+        grid-template-areas: 
+        "one two" 
+        "one three"
+        "one three";
+        grid-template-columns: 220px 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .one {
+        grid-area: one;
+    }
+
+    .two {
+        grid-area: two;
+    }
+
+    .three {
+        grid-area: three;
+    }
+    
+    .abouttwo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .socials {
+        display: flex;
+        flex-direction: row;
+        background-color: #282828;
+        justify-content: center;
+        
+    }
+    
+    .socials > a {
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+    }
+    
+    .socials > a:hover {
+        color: aqua;
+    }
+    
+    .contactinfo {
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+        padding: 50px 0px;
+    }
+    
+    .copy {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .contactinfo, .copy {
+        color: white;
+        background-color: #282828;
+        border-bottom: solid white 1px;
+    }
+    
+    svg {
+        height: 20px;
+        color: white;
+    }
+    
+    .profiles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-around;
+        padding: 20px 100px;
+    }
+
+    
+    .profileimg {
+        height: 150px;
+        width: 150px;
+    }
+
+    .menu ul {
+        max-height: 0;
+        overflow: hidden;
+        transform: translateX(90);
+        transition: all 0.5s;
+    }
+
+    [aria-controls="menu-list"] {
+        display: block;
+    }
+
+    [aria-expanded="true"] ~ ul {
+        display: grid;
+        max-height: 500px;
+        transform: rotateX(0);
+    }
+
+    [aria-expanded="false"] .close {
+        display: none;
+    }
+
+    [aria-expanded="false"] .open {
+        display: inline-block;
+    }
+
+    [aria-expanded="true"] .close {
+        display: inline-block;
+    }
+
+    [aria-expanded="true"] .open {
+        display: none;
+    }
+
+
+
+}
+
+@media screen and (max-width: 599px) {
+
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        color: #999;
+    }
+    
+    h1, h2 {
+        font-size: 300%;
+        color: #6b6b6b;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        position: sticky;
+    }
+    
+    .logo {
+        flex-grow: 1;
+    }
+    
+    li > a {
+        text-decoration: none;
+        padding: 10px;
+        color: #6b6b6b;
+    }
+    
+    li > a:hover {
+        color: darkblue;
+    }
+    
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        padding: 0px 50px;
+    }
+    
+    .aboutone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pictures {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    
+    .picture1 > img {
+        height: 150px;
+        width: 200px;
+    }
+
+    .picture1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .picture2 > img {
+        
+        height: 150px;
+        width: 200px;
+    }
+
+    .picture2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .picture3 > img {
+        height: 150px;
+        width: 200px;
+    }
+
+    .picture3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .one {
+        grid-area: one;
+    }
+
+    .two {
+        grid-area: two;
+    }
+
+    .three {
+        grid-area: three;
+    }
+    
+    .abouttwo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .socials {
+        font-size: 0;
+        
+    }
+    
+    .socials > a {
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+    }
+    
+    .socials > a:hover {
+        color: aqua;
+    }
+    
+    .contactinfo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding: 50px 0px;
+    }
+    
+    .copy {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .contactinfo, .copy {
+        color: white;
+        background-color: #282828;
+        border-bottom: solid white 1px;
+    }
+    
+    svg {
+        height: 20px;
+        color: white;
+    }
+    
+    .profiles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 100px;
+    }
+    
+    .profileimg {
+        height: 150px;
+        width: 150px;
+    }
+
+}

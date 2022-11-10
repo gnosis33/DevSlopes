@@ -1,0 +1,42 @@
+.flexbar {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    border: 3px solid blueviolet;
+}
+
+.flexbar > a, div, img {
+    padding: 10px;
+}
+
+.flexbar > a {
+    text-decoration: none;
+}
+
+.sidebar {
+    align-self: center;
+    font-size: larger;
+    font-weight: bold;
+    color: lightslategray;
+}
+
+a {
+    color: lightslategray;
+}
+
+a:hover {
+    color:blueviolet;
+    background-color: rgba(138,43,226,0.3);
+}
+
+.name {
+    align-self: center;
+    color: lightslategray;
+}
+
+.profile {
+    align-self: center;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+}
